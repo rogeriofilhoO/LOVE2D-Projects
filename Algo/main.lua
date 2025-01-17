@@ -8,7 +8,7 @@ function love.load()
     player = {}
     player.x = 400
     player.y = 200
-    player.speed = 3
+    player.speed = 4
     player.spriteSheet = love.graphics.newImage('sprites/Green-Cap-Character-16x18.png')
     player.grid = anim8.newGrid( 16, 18, player.spriteSheet:getWidth(), player.spriteSheet:getHeight())
 
@@ -53,7 +53,6 @@ function love.update(dt)
     if isMoving == false then
         player.anim:gotoFrame(1)
     end
-
 
     player.anim:update(dt)
 end
